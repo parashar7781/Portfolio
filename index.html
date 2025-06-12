@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en" class=" scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partha Parashar | Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="min-h-screen font-display tracking-wide bg-white text-gray-900">
+    <main class="max-w-screen w-full mx-auto overflow-x-hidden">
+
+        <!-- Navbar -->
+        <section id="nav">
+            <nav aria-label="Navigation"
+                class="flex md:flex-row flex-col justify-between p-2 fixed left-0 top-0 z-10 w-full shadow-md border-b-2 border-sky-300 bg-white">
+
+                <div class="px-12 flex justify-between items-center md:items-start">
+                    <!-- logo -->
+                    <div>
+                        <a href="#">
+                            <img class="h-14 cursor-pointer" src="/assets/logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- hamburber & closebtn -->
+
+                    <div class="md:hidden">
+                        <!-- hamburger -->
+                        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="block md:hidden size-6 cursor-pointer text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                        <!-- cross icon -->
+                        <svg id="closebtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="hidden size-6 cursor-pointer text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+
+                    </div>
+
+                </div>
+
+                <div id="navlinks" class="px-12 hidden md:flex flex-col md:flex-row md:items-center">
+                    <ul class="flex text-lg md:text-base md:gap-8 flex-col md:flex-row">
+
+                        <li class="nav-item transition-transform hover:text-cyan-500">
+                            <a href="#home" class="flex gap-0.5 items-center py-2 relative pb-1 hover:before:w-full transition-opacity duration-300
+                                    before:absolute before:bottom-0 before:left-0 before:h-1 before:w-0 before:transition-all before:duration-300 
+                                    before:bg-cyan-500 before:rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="size-4">
+                                    <path fill-rule="evenodd"
+                                        d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item transition-transform hover:text-cyan-500">
+                            <a href="#about" class="flex gap-0.5 items-center py-2 relative pb-1 hover:before:w-full transition-opacity duration-300
+                                    before:absolute before:bottom-0 before:left-0 before:h-1 before:w-0 before:transition-all before:duration-300 
+                                    before:bg-cyan-500 before:rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="size-4">
+                                    <path
+                                        d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z" />
+                                </svg>
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item transition-transform hover:text-cyan-500">
+                            <a href="#skills" class="flex gap-0.5 items-center py-2 relative pb-1 hover:before:w-full transition-opacity duration-300
+                                    before:absolute before:bottom-0 before:left-0 before:h-1 before:w-0 before:transition-all before:duration-300  
+                                    before:bg-cyan-500 before:rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="size-4">
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 10a4.5 4.5 0 0 0 4.284-5.882c-.105-.324-.51-.391-.752-.15L15.34 6.66a.454.454 0 0 1-.493.11 3.01 3.01 0 0 1-1.618-1.616.455.455 0 0 1 .11-.494l2.694-2.692c.24-.241.174-.647-.15-.752a4.5 4.5 0 0 0-5.873 4.575c.055.873-.128 1.808-.8 2.368l-7.23 6.024a2.724 2.724 0 1 0 3.837 3.837l6.024-7.23c.56-.672 1.495-.855 2.368-.8.096.007.193.01.291.01ZM5 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M14.5 11.5c.173 0 .345-.007.514-.022l3.754 3.754a2.5 2.5 0 0 1-3.536 3.536l-4.41-4.41 2.172-2.607c.052-.063.147-.138.342-.196.202-.06.469-.087.777-.067.128.008.257.012.387.012ZM6 4.586l2.33 2.33a.452.452 0 0 1-.08.09L6.8 8.214 4.586 6H3.309a.5.5 0 0 1-.447-.276l-1.7-3.402a.5.5 0 0 1 .093-.577l.49-.49a.5.5 0 0 1 .577-.094l3.402 1.7A.5.5 0 0 1 6 3.31v1.277Z" />
+                                </svg>
+                                Skills
+                            </a>
+                        </li>
+
+                        <li class="nav-item transition-transform hover:text-cyan-500">
+                            <a href="#project" class="flex gap-0.5 items-center py-2 relative pb-1 hover:before:w-full transition-opacity duration-300
+                                    before:absolute before:bottom-0 before:left-0 before:h-1 before:w-0 before:transition-all before:duration-300 
+                                    before:bg-cyan-500 before:rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="size-4">
+                                    <path fill-rule="evenodd"
+                                        d="M4.25 2A2.25 2.25 0 0 0 2 4.25v11.5A2.25 2.25 0 0 0 4.25 18h11.5A2.25 2.25 0 0 0 18 15.75V4.25A2.25 2.25 0 0 0 15.75 2H4.25Zm4.03 6.28a.75.75 0 0 0-1.06-1.06L4.97 9.47a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 0 0 1.06-1.06L6.56 10l1.72-1.72Zm4.5-1.06a.75.75 0 1 0-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06l2.25-2.25a.75.75 0 0 0 0-1.06l-2.25-2.25Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Projects
+                            </a>
+                        </li>
+
+                        <li class="nav-item transition-transform hover:text-cyan-500">
+                            <a href="#contact" class="flex gap-0.5 items-center py-2 relative pb-1 hover:before:w-full transition-opacity duration-300
+                                    before:absolute before:bottom-0 before:left-0 before:h-1 before:w-0 before:transition-all before:duration-300 
+                                    before:bg-cyan-500 before:rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="size-4">
+                                    <path
+                                        d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+                                    <path
+                                        d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+
+                        <!-- resume btn -->
+                        <li>
+                            <a href="/assets/Partha Parashar Resume.pdf" target="_blank" rel="noopener noreferrer" download>
+                                <button type="button"
+                                    class="cursor-pointer items-center flex gap-2 uppercase font-bold italic my-4 sm:my-0 p-2 px-4 
+                                    bg-gradient-to-tr from-sky-400 to-sky-600 text-white rounded-xl shadow-lg hover:from-sky-500 hover:to-sky-700
+                                    hover:brightness-110 focus:ring-2 focus:outline-none focus:ring-sky-300 transition-all duration-300">
+                                    Resume
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 font-bold">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <!--Home sec  -->
+        <section id="home"
+            class="relative px-4 py-10 pt-40 sm:pt-52 min-h-screen bg-gradient-to-b from-white via-sky-100 to-sky-200 scroll-mt-16">
+
+            <!-- bubbles -->
+            <div class="bubbles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- content -->
+            <div class="max-w-6xl mx-auto h-full flex flex-col md:flex-row-reverse gap-20 items-center justify-center">
+
+                <!--image  -->
+                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center" data-aos="fade-in">
+                    <!-- animation -->
+                    <span
+                        class="absolute w-[103%] h-[103%] rounded-full border-2 border-dashed border-sky-300 
+                        flex items-center justify-center text-[0.7rem] md:text-sm text-sky-400 font-semibold glow-ring">
+                        Web Developer JavaScript MERN Stack
+                    </span>
+                    <!-- image box -->
+                    <div class="relative w-full h-full rounded-full overflow-hidden shadow-xl border-[3px] border-white z-5 
+                        hover:scale-103 transition-transform duration-500">
+                        <img class="h-full object-cover object-center rounded-full" src="assets/image12.png"
+                            alt="Partha Parashar">
+                    </div>
+                </div>
+
+                <!-- intro text -->
+                <div class="text-center md:text-left max-w-xl text-sky-900" data-aos="fade-up" >
+                    <!-- heading -->
+                    <h1 class="text-5xl sm:text-6xl font-extrabold">
+                        Hello! <span class="wave inline-block">👋🏻</span>
+                    </h1>
+
+                    <!-- name -->
+                    <p class="text-5xl sm:text-6xl font-extrabold mt-3">
+                        I'm <span class="uppercase text-sky-700 drop-shadow">Partha Parashar</span>
+                    </p>
+
+                    <!-- role -->
+                    <p
+                        class="text-3xl sm:text-5xl font-bold mt-5 text-sky-600 flex items-center justify-center md:justify-start">
+                        <span class="inline-block max-w-full text-ellipsis whitespace-nowrap">
+                            <span id="text" class="border-r-2 border-sky-600 pr-1 animate-typing"></span>
+                        </span>
+                        <span id="cursor" class="ml-1 text-sky-700 animate-pulse"></span>
+                    </p>
+
+                    <!--tagline  -->
+                    <p class="italic font-medium sm:text-xl mt-4 text-sky-800">
+                        I design and build beautifully simple things — and I love what I do.
+                    </p>
+
+                    <!-- call to action btn -->
+                    <div class="mt-6 flex justify-center md:justify-start">
+                        <a href="#project">
+                            <button class="flex text-lg items-center gap-2 cursor-pointer uppercase font-semibold italic px-6 py-3 bg-gradient-to-tr
+                                from-sky-400 to-sky-600 text-white rounded-xl shadow-lg hover:from-sky-500 hover:to-sky-700 hover:brightness-110 
+                                focus:ring-2 focus:outline-none focus:ring-sky-300 transition-all duration-300">
+                                View My Projects
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button -->
+            <a href="#about" class="absolute left-1/2 top:full md:top-11/12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-10 animate-bounce font-bold text-sky-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </a>
+
+        </section>
+
+        <!--about sec  -->
+        <section id="about" class="bg-sky-50 py-20 px-4 pt-32">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 justify-between">
+                <!-- image sec -->
+                <img src="/assets/aboutImage.png" alt="Reetu Gupta"
+                    class="mx-auto h-2/6 sm:h-2/5 drop-shadow-[0_5px_25px_rgba(34,211,238,0.4)]" loading="lazy" data-aos="fade-right"/>
+
+                <!-- about content -->
+                <div
+                    class="w-full px-auto md:w-1/2 flex flex-col justify-center gap-4 text-xl pt-8 my-auto mx-auto text-justify" data-aos="fade-left">
+                    <!-- heading -->
+                    <h2 class="text-5xl sm:text-6xl font-bold text-sky-700 drop-shadow-sm">
+                        Who I Am?
+                    </h2>
+
+                    <!-- para -->
+                    <p>
+                        Hi, I'm <span class="font-semibold text-sky-800">Partha Parashar</span>&mdash;a <span
+                            class="text-sky-700 font-medium">frontend developer</span> with a sharp eye for design, a
+                        solid grasp of code, and a growing command for <span class="text-sky-600 font-medium">
+                            full-stack mastery</span>.
+                    </p>
+
+                    <ul class="mt-2 ml-4">
+                        <li class="flex items-center gap-2 hover:text-sky-600 transition-all duration-200">
+                            <i class="fa-solid fa-square-check text-sky-600 text-lg"></i>
+                            Final year B.Tech Student
+                        </li>
+
+                        <li class="flex items-center gap-2 hover:text-sky-600 transition-all duration-200">
+                            <i class="fa-solid fa-square-check text-sky-600 text-lg"></i>
+                            Skilled in Python, HTML, CSS, JavaScript
+                        </li>
+
+                        <li class="flex items-center gap-2 hover:text-sky-600 transition-all duration-200">
+                            <i class="fa-solid fa-square-check text-sky-600 text-lg"></i>
+                            Currently diving deep into the MERN stack
+                        </li>
+
+                        <li class="flex items-center gap-2 hover:text-sky-600 transition-all duration-200">
+                            <i class="fa-solid fa-square-check text-sky-600 text-lg"></i>
+                            I believe in owning the full product, not just the frontend
+                        </li>
+                    </ul>
+
+                    <p>
+                        When I'm not coding, you'll find me lost in a storybook or geeking out on tech trends. I believe
+                        great products are built pixel by pixel, with purpose and passion&hyphen;and that's exactly what
+                        I bring to the table.
+                    </p>
+
+                    <p>
+                        Looking for a <span class="font-semibold text-sky-800">frontend dev</span> who's obsessed with
+                        <span class="italic text-indigo-800">solving bugs like puzzles</span>? You just found her <span
+                            class="size-16">&#x1f609;.</span>
+                    </p>
+
+                    <!-- quote -->
+                    <p class="text-right italic text-sky-600 mr-8">
+                        "Design like a user, code like a pro."
+                    </p>
+
+                    <p class="text-right text-sky-800 font-semibold mr-8">
+                        &#x2053; Partha
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--skills sec  -->
+        <section id="skills" class="bg-gray-100 py-20 pt-32 px-4">
+            <div class="max-w-6xl mx-auto flex flex-col gap-4" data-aos="fade-up">
+                <!-- heading -->
+                <h1 class="self-center md:self-start text-5xl sm:text-6xl font-bold text-sky-700 drop-shadow-sm">
+                    Tech Stack
+                </h1>
+
+                <!-- skill1 -->
+                <div class="flex flex-col gap-8 items-center justify-center">
+                    <!-- subheading1 -->
+                    <div class="flex flex-col gap-4">
+                        <h2 class="self-center text-4xl sm:text-5xl font-semibold text-sky-600 drop-shadow-sm">
+                            Professional Skillset
+                        </h2>
+
+                        <!-- descp -->
+                        <p class="text-xl">
+                            Core technologies I use to build web applications:
+                        </p>
+                    </div>
+
+                    <!-- skill cards -->
+                    <div class="flex flex-wrap gap-4 items-center justify-center">
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/c.svg" alt="C" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                C
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="assets/skills/c++.svg" alt="c++" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                C++
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="assets/skills/html.svg" alt="html" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                HTML
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/css3.svg" alt="css3" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                CSS
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/javascript.svg" alt="javascript" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                JavaScript
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/tailwind.svg" alt="tailwind" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Tailwind
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/Bootstrap.svg" alt="Bootstrap" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Bootstrap
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/reactjs.svg" alt="reactjs" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                ReactJS
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/mongodb.svg" alt="mongodb" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                MongoDB
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/mysql.svg" alt="mysql" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                MySQL
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/nodejs.svg" alt="nodejs" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                NodeJS
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/express.svg" alt="express" class="size-16 object-contain" />
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                ExpressJS
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- skill2 -->
+                <div class="flex flex-col gap-8 items-center justify-center mt-20">
+                    <!-- subheading2 -->
+                    <div class="flex flex-col gap-4">
+                        <h2 class="self-center text-4xl sm:text-5xl font-semibold text-sky-600 drop-shadow-sm">
+                            Tools I Use
+                        </h2>
+
+                        <!-- descp -->
+                        <p class="text-xl">
+                            Tools that help me design, test, deploy & collaborate:
+                        </p>
+                    </div>
+
+                    <!-- skill cards -->
+                    <div class="flex flex-wrap gap-4 items-center justify-center">
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/git.svg" alt="git" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Git
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/github.svg" alt="github" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                GitHub
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/vscode.svg" alt="vscode" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                VS COde
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/netlify.svg" alt="netlify" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Netlify
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/vercel.svg" alt="vercel" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Vercel
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/canva.jpeg" alt="canva" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Canva
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/figma.svg" alt="figma" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Figma
+                            </div>
+                        </div>
+
+                        <div class="group relative w-36 h-28 md:w-48 md:h-32 border-2 border-sky-700 rounded-xl 
+                            flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg transform hover:scale-105 
+                            transition duration-500 hover:shadow-gray-700">
+                            <img src="/assets/skills/postman.svg" alt="postman" class="size-16 object-contain" />
+                            <!-- Tooltip -->
+                            <div class="absolute bottom-0 mb-1 hidden group-hover:block bg-gray-800 text-white text-xs 
+                                px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Postman
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--projects sec  -->
+        <section id="project" class="bg-sky-50 py-20 px-4 pt-32">
+            <div class="max-w-6xl mx-auto flex flex-col gap-8" data-aos="fade-up">
+                <div class="flex flex-col gap-4 items-center justify-center">
+                    <!-- heading -->
+                    <h2 class="text-5xl sm:text-6xl font-bold text-sky-700 drop-shadow-sm">
+                        My Recent Work
+                    </h2>
+
+                    <!-- description -->
+                    <p class="text-xl">
+                        Here are few projects I've worked recently:
+                    </p>
+                </div>
+
+                <!-- project1 -->
+                <div class="flex flex-col md:flex-row gap-10 items-center justify-between py-10">
+
+                    <!-- project left img -->
+                    <div class="w-full md:w-3/5 flex justify-center md:justify-start relative group">
+                        <img src="/assets/projects/project1.png" alt="Quiz App"
+                            class="shadow-white cursor-pointer w-4/5 rounded-lg shadow-lg transition duration-300 
+                            group-hover:shadow-sky-300 group-hover:scale-105 group-hover:brightness-50 backdrop-blur-md" />
+
+                        <!-- hover overlay icon -->
+                        <div class="absolute top-2/5 left-1/3 transform translate-1/2 flex items-center justify-center 
+                            opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://quizapp-reetu.netlify.app/" target="_blank" rel="noreferrer noopener"
+                                class="bg-gray-300 rounded-md p-3 shadow-lg hover:scale-110 transition-transform duration-200">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 font-bold text-black">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- project content -->
+                    <div class="flex flex-col w-full md:w-2/5 text-center text-lg md:text-left space-y-4 px-4 md:px-0">
+                        <!-- heading -->
+                        <h3 class="text-4xl text-sky-600 font-semibold">
+                            Quiz App
+                        </h3>
+
+                        <!-- description -->
+                        <p class="text-justify">
+                            Dynamic quiz app using the Open Trivia DB API. Users can select topic and difficulty, answer
+                            questions in real-time, and track score. Emphasizes DOM manipulation, API integration, and
+                            event-driven logic.
+                        </p>
+
+                        <!-- tech stack -->
+                        <div class="flex gap-4 flex-wrap text-sm">
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #HTML
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #CSS
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #JavaScript
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #OpenTrivia
+                            </span>
+                        </div>
+
+                        <!-- buttons -->
+                        <div class="flex gap-5 justify-center md:justify-start items-center">
+                            <a href="https://github.com/ReetuGupta/QuizApp" target="_blank" rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 to-sky-600 
+                                    cursor-pointer font-medium text-lg text-white rounded-md shadow-lg hover:shadow-xl 
+                                    transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 32 32" class="size-5 fill-current text-white">
+                                        <path fill-rule="evenodd"
+                                            d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </button>
+                            </a>
+
+                            <a href="https://quizapp-u.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 to-sky-600 
+                                    cursor-pointer font-medium text-lg text-white rounded-md shadow-lg hover:shadow-xl 
+                                    transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                                    </svg>
+                                    Demo
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- project2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-10 items-center justify-between py-10">
+
+                    <!-- project left img -->
+                    <div class="w-full md:w-3/5 flex justify-center md:justify-end relative group">
+                        <img src="/assets/projects/project2.png" alt="Recipe Website"
+                            class="shadow-white cursor-pointer w-4/5 rounded-lg shadow-lg transition 
+                            duration-300 group-hover:shadow-sky-300 group-hover:scale-105 group-hover:brightness-50 backdrop-blur-md" />
+
+                        <!-- hover overlay icon -->
+                        <div class="absolute top-2/5 left-1/2 transform translate-1/2 flex items-center 
+                            justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://cookie-recipe-reetu.netlify.app/" target="_blank" rel="noreferrer noopener"
+                                class="bg-gray-300 rounded-md p-3 shadow-lg hover:scale-110 transition-transform duration-200">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 font-bold text-black">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- project content -->
+                    <div class="flex flex-col w-full md:w-2/5 text-center text-lg md:text-left space-y-4 px-4 md:px-0">
+                        <!-- heading -->
+                        <h3 class="text-4xl text-sky-600 font-semibold">
+                            Recipe Website
+                        </h3>
+
+                        <!-- description -->
+                        <p class="text-justify">
+                            Multi-page responsive recipe website with scroll-based progress bar, print-ready layout, and
+                            engaging flipbook animation. Focused on clean UI, visual appeal, and basic interactivity.
+                        </p>
+
+                        <!-- tech stack -->
+                        <div class="flex gap-4 flex-wrap text-sm">
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #HTML
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #CSS
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #JavaScript
+                            </span>
+                        </div>
+
+                        <!-- buttons -->
+                        <div class="flex gap-5 justify-center md:justify-start items-center">
+                            <a href="https://github.com/ReetuGupta/Recipe-Website" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 to-sky-600
+                                    cursor-pointer font-medium text-lg text-white rounded-md shadow-lg hover:shadow-xl 
+                                    transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 32 32" class="size-5 fill-current text-white">
+                                        <path fill-rule="evenodd"
+                                            d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </button>
+                            </a>
+
+                            <a href="https://cookie-recipe-reetu.netlify.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 to-sky-600 
+                                    cursor-pointer font-medium text-lg text-white rounded-md shadow-lg hover:shadow-xl 
+                                    transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                                    </svg>
+                                    Demo
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- project3 -->
+                <div class="flex flex-col md:flex-row gap-10 items-center justify-between py-10">
+
+                    <!-- project left img -->
+                    <div class="w-full md:w-3/5 flex justify-center md:justify-start relative group">
+                        <img src="/assets/projects/project3.png" alt="Password Generator"
+                            class="shadow-white cursor-pointer w-4/5 rounded-lg shadow-lg transition duration-300
+                            group-hover:shadow-sky-300 group-hover:scale-105 group-hover:brightness-50 backdrop-blur-md" />
+
+                        <!-- hover overlay icon -->
+                        <div class="absolute top-2/5 left-1/3 transform translate-1/2 flex items-center justify-center 
+                            opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://password-generator-reetugupta.netlify.app/" target="_blank"
+                                rel="noreferrer noopener"
+                                class="bg-gray-300 rounded-md p-3 shadow-lg hover:scale-110 transition-transform duration-200">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 font-bold text-black">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- project content -->
+                    <div class="flex flex-col w-full md:w-2/5 text-center text-lg md:text-left space-y-4 px-4 md:px-0">
+                        <!-- heading -->
+                        <h3 class="text-4xl text-sky-600 font-semibold">
+                            Random Password Generator
+                        </h3>
+
+                        <!-- description -->
+                        <p class="text-justify">
+                            Interactive password generator with real-time strength indication, length selector, and
+                            copy-to-clipboard functionality. Built with form control and custom logic for security
+                            features.
+                        </p>
+
+                        <!-- tech stack -->
+                        <div class="flex gap-4 flex-wrap text-sm">
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #HTML
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #CSS
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #JavaScript
+                            </span>
+                        </div>
+
+                        <!-- buttons -->
+                        <div class="flex gap-5 justify-center md:justify-start items-center">
+                            <a href="https://github.com/ReetuGupta/Password-Generator" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 to-sky-600 
+                                    cursor-pointer font-medium text-lg text-white rounded-md shadow-lg hover:shadow-xl 
+                                    transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 32 32" class="size-5 fill-current text-white">
+                                        <path fill-rule="evenodd"
+                                            d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </button>
+                            </a>
+
+                            <a href="https://password-generator-reetugupta.netlify.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 
+                                    to-sky-600 cursor-pointer font-medium text-lg text-white rounded-md shadow-lg 
+                                    hover:shadow-xl transition-all duration-300 ease-in-out hover:brightness-110 
+                                    hover:scale-105 focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                                    </svg>
+                                    Demo
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- project4 -->
+                <div class="flex flex-col md:flex-row-reverse gap-10 items-center justify-between py-10">
+
+                    <!-- project left img -->
+                    <div class="w-full md:w-3/5 flex justify-center md:justify-end relative group">
+                        <img src="/assets/projects/project4.png" alt="Razorpay Clone"
+                            class="shadow-white cursor-pointer w-4/5 rounded-lg shadow-lg transition duration-300 
+                            group-hover:shadow-sky-300 group-hover:scale-105 group-hover:brightness-50 backdrop-blur-md" />
+
+                        <!-- hover overlay icon -->
+                        <div class="absolute top-2/5 left-1/2 transform translate-1/2 flex items-center justify-center 
+                            opacity-0 group-hover:opacity-100 transition duration-300">
+                            <a href="https://razorpay-clone-reetugupta.netlify.app/" target="_blank"
+                                rel="noreferrer noopener"
+                                class="bg-gray-300 rounded-md p-3 shadow-lg hover:scale-110 transition-transform duration-200">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 font-bold text-black">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- project content -->
+                    <div class="flex flex-col w-full md:w-2/5 text-center text-lg md:text-left space-y-4 px-4 md:px-0">
+                        <!-- heading -->
+                        <h3 class="text-4xl text-sky-600 font-semibold">
+                            Razorpay Clone
+                        </h3>
+
+                        <!-- description -->
+                        <p class="text-justify">
+                            Pixel-perfect responsive clone of Razorpay website. Recreated core UI sections
+                            including navbar, CTA, features, testimonials, and footer. Shows command over Tailwind and
+                            layout structuring.
+                        </p>
+
+                        <!-- tech stack -->
+                        <div class="flex gap-4 flex-wrap text-sm">
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #HTML
+                            </span>
+                            <span
+                                class="font-medium p-1 px-1.5 shadow-sm bg-white text-sky-600 border border-sky-400 rounded-full">
+                                #TailwindCSS
+                            </span>
+                        </div>
+
+                        <!-- buttons -->
+                        <div class="flex gap-5 justify-center md:justify-start items-center">
+                            <a href="https://github.com/uGupta/Razorpay-Clone" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 
+                                    to-sky-600 cursor-pointer font-medium text-lg text-white rounded-md shadow-lg 
+                                    hover:shadow-xl transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                        viewBox="0 0 32 32" class="size-5 fill-current text-white">
+                                        <path fill-rule="evenodd"
+                                            d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
+                                        </path>
+                                    </svg>
+                                    GitHub
+                                </button>
+                            </a>
+
+                            <a href="https://razorpay-clone-reetugupta.netlify.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                <button class="flex items-center gap-1 px-2 py-1 bg-gradient-to-tr from-sky-400 to-sky-600 
+                                    cursor-pointer font-medium text-lg text-white rounded-md shadow-lg hover:shadow-xl 
+                                    transition-all duration-300 ease-in-out hover:brightness-110 hover:scale-105 
+                                    focus:ring-sky-300 focus:ring-2 focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                                    </svg>
+                                    Demo
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- more projects btn -->
+                <div class="mt-6 flex justify-center">
+                    <a href="https://github.com/uGupta" target="_blank"
+                                rel="noopener noreferrer">
+                        <button
+                            class="flex text-lg items-center gap-2 cursor-pointer uppercase font-semibold italic px-6 py-3 
+                                bg-gradient-to-tr from-sky-400 to-sky-600 text-white rounded-xl shadow-lg hover:from-sky-500 
+                                hover:brightness-110 hover:to-sky-700 focus:ring-2 focus:outline-none focus:ring-sky-300 transition-all duration-300">
+                            More Projects
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--contact sec  -->
+        <section id="contact" class="bg-gray-100 py-20 px-4 pt-32" data-aos="fade-up">
+            <div class="max-w-6xl mx-auto flex flex-col gap-12">
+                <!-- heading -->
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-5xl sm:text-6xl font-bold text-sky-700 drop-shadow-sm">
+                        Get In Touch
+                    </h2>
+
+                    <!-- description -->
+                    <p class="text-xl text-justify">
+                        I’m always eager to explore new opportunities and take on exciting projects. If you have a
+                        project
+                        in mind, or just want to say hi, feel free to send me a message.
+                    </p>
+                </div>
+
+                <!-- form -->
+                <form name="contact" data-netlify="true" method="POST"
+                    class="flex flex-col gap-2 bg-white w-full border border-gray-300 rounded-xl shadow-sm p-8">
+                    
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <!-- name -->
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label class="font-semibold text-sky-700" for="name">Name</label>
+                            <input class="shadow-sm focus:shadow-md transition-shadow p-2 rounded-lg border 
+                                border-gray-300 focus:outline-none focus:ring-1 focus:ring-sky-400" type="text"
+                                id="name" placeholder="Your Name" name="name" required>
+                        </div>
+
+                        <!-- email -->
+                        <div class="flex flex-col gap-2 w-full">
+                            <label class="font-semibold text-sky-700" for="email">Email</label>
+                            <input class="shadow-sm focus:shadow-md transition-shadow p-2 rounded-lg border 
+                                border-gray-300 focus:outline-none focus:ring-1 focus:ring-sky-400" type="email"
+                                id="email" placeholder="john@doe.com" name="email" required>
+                        </div>
+                    </div>
+
+                    <!-- subject -->
+                    <div class="flex flex-col gap-2">
+                        <label class="font-semibold text-sky-700" for="subject">Subject</label>
+                        <input class="shadow-sm focus:shadow-md transition-shadow p-2 rounded-lg border border-gray-300 
+                            focus:outline-none focus:ring-1 focus:ring-sky-400" type="text" id="subject"
+                            placeholder="What's this about?" name="subject" required>
+                    </div>
+
+                    <!-- message -->
+                    <div class="flex flex-col gap-2">
+                        <label class="font-semibold text-sky-700" for="msg">Message</label>
+                        <textarea class="shadow-sm focus:shadow-md transition-shadow p-2 rounded-lg border border-gray-300 
+                            focus:outline-none focus:ring-1 focus:ring-sky-400" rows="5" id="msg"
+                            placeholder="Hello there, I would like to ask you about..." required name="message"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="disabled:opacity-50 disabled:cursor-not-allowed w-fit items-center self-end 
+                        cursor-pointer flex gap-2 uppercase font-bold italic my-4 sm:my-0 p-2 px-4 bg-gradient-to-tr 
+                        hover:brightness-110 from-sky-400 to-sky-600 text-white rounded-xl shadow-lg hover:from-sky-500 
+                        hover:to-sky-700 focus:ring-2 focus:outline-none focus:ring-sky-300 transition-all duration-300">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+
+                <!-- social links -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-2xl font-semibold text-sky-700">
+                        Or Contact Me With...
+                    </h3>
+
+                    <div class="flex items-center gap-4">
+                        <!-- email -->
+                        <a href="mailto:parthaparshar22@gmail.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Send Email" class="group relative bg-white border border-sky-700 rounded-full p-2 
+                            cursor-pointer shadow-md transition duration-200 hover:scale-105 hover:shadow-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 48 48" class="size-8 fill-current text-sky-700">
+                                <path fill="#1e88e5"
+                                    d="M34,42H14c-4.411,0-8-3.589-8-8V14c0-4.411,3.589-8,8-8h20c4.411,0,8,3.589,8,8v20 C42,38.411,38.411,42,34,42z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M35.926,17.488L29.414,24l6.511,6.511C35.969,30.347,36,30.178,36,30V18 C36,17.822,35.969,17.653,35.926,17.488z M26.688,23.899l7.824-7.825C34.347,16.031,34.178,16,34,16H14 c-0.178,0-0.347,0.031-0.512,0.074l7.824,7.825C22.795,25.38,25.205,25.38,26.688,23.899z M24,27.009 c-1.44,0-2.873-0.542-3.99-1.605l-6.522,6.522C13.653,31.969,13.822,32,14,32h20c0.178,0,0.347-0.031,0.512-0.074l-6.522-6.522 C26.873,26.467,25.44,27.009,24,27.009z M12.074,17.488C12.031,17.653,12,17.822,12,18v12c0,0.178,0.031,0.347,0.074,0.512 L18.586,24L12.074,17.488z">
+                                </path>
+                            </svg>
+                            <!-- tooltip -->
+                            <div class="absolute -bottom-10 left-1/2 -translate-1/2 hidden group-hover:block 
+                                bg-gray-800 text-white text-xs px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                Mail
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/parashar7781" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub Profile" class="group relative bg-white shadow-md border border-sky-700 rounded-full p-2 
+                            cursor-pointer transition duration-200 hover:scale-105 hover:shadow-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 32 32" class="size-8 fill-current text-sky-700">
+                                <path fill-rule="evenodd"
+                                    d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z">
+                                </path>
+                            </svg>
+                            <div class="absolute -bottom-10 left-1/2 -translate-1/2 hidden group-hover:block 
+                                bg-gray-800 text-white text-xs px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                GitHub
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/partha-parashar-104705261" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn Profile" class="group relative bg-white shadow-md border border-sky-700 rounded-full p-2 
+                            cursor-pointer transition duration-200 hover:scale-105 hover:shadow-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                                viewBox="0 0 48 48" class="size-8 fill-current text-sky-700">
+                                <path fill="#0288D1"
+                                    d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                                </path>
+                                <path fill="#FFF"
+                                    d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                                </path>
+                            </svg>
+                            <div class="absolute -bottom-10 left-1/2 -translate-1/2 hidden group-hover:block 
+                                bg-gray-800 text-white text-xs px-2 py-1 rounded shadow-md z-10 whitespace-nowrap">
+                                LinkedIn
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section id="footer" class="bg-gray-100" data-aos="fade-in">
+            <footer class="w-full py-8 px-4 flex flex-col md:flex-row items-center justify-between">
+                <!-- name -->
+                <p class="text-4xl md:text-6xl px-8 font-bold text-sky-400 opacity-40 select-none italic drop-shadow">
+                    Reetu Gupta
+                </p>
+
+                <!-- developer line -->
+                <p class="text-gray-700 mr-8 px-8 text-base sm:text-base text-center md:text-right">
+                    Made with <span class="text-red-500 text-xl animate-pulse">&hearts;</span> using Tailwind CSS
+                    <span>&copy;</span> 2025. All rights reserved.
+                </p>
+            </footer>
+        </section>
+
+        <!-- back to top btn -->
+        <button id="scroll-top-btn" class="hidden cursor-pointer fixed rounded-full border-none right-4 bottom-8 z-50 p-4 bg-gradient-to-tr hover:scale-95 
+            from-sky-400 to-sky-600 text-white shadow-lg hover:from-sky-500 hover:to-sky-700 focus:ring-2 
+            focus:outline-none focus:ring-sky-300 transition-all duration-300 hover:brightness-110">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7 font-black">
+                <path fill-rule="evenodd"
+                    d="M11.47 2.47a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1-1.06 1.06l-2.47-2.47V21a.75.75 0 0 1-1.5 0V4.81L8.78 7.28a.75.75 0 0 1-1.06-1.06l3.75-3.75Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
