@@ -4,7 +4,7 @@ A sleek and professional personal portfolio website built using HTML, Tailwind C
 
 ## 🌐 Live Site
 
-🔗 [reetugupta-portfolio.netlify.app](https://reetugupta-portfolio.netlify.app/)
+🔗 [portfolio.netlify.app](https://reetugupta-portfolio.netlify.app/)
 
 ## 📸 Preview
 
@@ -24,14 +24,3 @@ A sleek and professional personal portfolio website built using HTML, Tailwind C
 - Live project previews & resume download  
 - Built with job-readiness and performance in mind
 
-## 🧾 License
-
-This project is open source under the [MIT License](LICENSE).
-
-## 🤝 Connect with Me
-
-- 🔗 [LinkedIn](https://www.linkedin.com/in/reetugupta07/)
-- 🐙 [GitHub](https://github.com/ReetuGupta)
-- 🌐 [Portfolio](https://reetugupta-portfolio.netlify.app/)
-
-Crafted with ❤️ by Reetu Gupta
