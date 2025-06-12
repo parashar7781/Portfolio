@@ -2,13 +2,7 @@
 
 A sleek and professional personal portfolio website built using HTML, Tailwind CSS, and JavaScript. It showcases my skills, projects, and resume as a frontend and MERN stack developer.
 
-## 🌐 Live Site
 
-🔗 [portfolio.netlify.app](https://reetugupta-portfolio.netlify.app/)
-
-## 📸 Preview
-
-![Portfolio Screenshot](./assets/preview.png)
 
 ## 🚀 Tech Stack
 
